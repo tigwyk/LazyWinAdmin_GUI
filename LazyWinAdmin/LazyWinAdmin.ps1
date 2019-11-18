@@ -377,7 +377,8 @@ function Main {
 	            try
 	            {
 	                Write-Verbose " [Get-PageFileSetting] :: Collecting Paging File Info"
-	                $PagingFiles = Get-WmiObject Win32_PageFileSetting -ComputerName $ComputerName -EnableAllPrivileges
+					#$PagingFiles = Get-WmiObject Win32_PageFileSetting -ComputerName $ComputerName -EnableAllPrivileges
+					$PagingFiles = Get-CimInstance -ClassName Win32_PageFileSetting -ComputerName $ComputerName
 	                if($PagingFiles)
 	                {
 	                    foreach($PageFile in $PagingFiles)
