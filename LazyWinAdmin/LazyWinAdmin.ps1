@@ -5746,8 +5746,8 @@ function Call-MainForm_pff
 	$ToolStripMenuItem_mmc = New-Object 'System.Windows.Forms.ToolStripMenuItem'
 	$ToolStripMenuItem_shutdownGui = New-Object 'System.Windows.Forms.ToolStripMenuItem'
 	$ToolStripMenuItem_registeredSnappins = New-Object 'System.Windows.Forms.ToolStripMenuItem'
-	$ToolStripMenuItem_about = New-Object 'System.Windows.Forms.ToolStripMenuItem'
-	$ToolStripMenuItem_AboutInfo = New-Object 'System.Windows.Forms.ToolStripMenuItem'
+	#$ToolStripMenuItem_about = New-Object 'System.Windows.Forms.ToolStripMenuItem'
+	#$ToolStripMenuItem_AboutInfo = New-Object 'System.Windows.Forms.ToolStripMenuItem'
 	$contextmenustripServer = New-Object 'System.Windows.Forms.ContextMenuStrip'
 	$ContextMenuStripItem_consoleToolStripMenuItem_ComputerName_Tools = New-Object 'System.Windows.Forms.ToolStripMenuItem'
 	$ContextMenuStripItem_consoleToolStripMenuItem_ComputerName_ConsolesMMC = New-Object 'System.Windows.Forms.ToolStripMenuItem'
@@ -5810,9 +5810,9 @@ function Call-MainForm_pff
 	#################################
 	
 	# LazyAdminKit information
-	$ApplicationName		= "LazyWinAdmin"
-	$ApplicationVersion		= "0.4"
-	$ApplicationLastUpdate	= "2012/06/14"
+	$ApplicationName		= "LuluWinAdmin"
+	$ApplicationVersion		= "0.1"
+	$ApplicationLastUpdate	= "2019/11/20"
 	
 	# Author Information
 	$AuthorName			= "Francois-Xavier Cat"
@@ -5823,7 +5823,7 @@ function Call-MainForm_pff
 	$AuthorTwitterURL	= "http://twitter.com/LazyWinAdm"
 	
 	# Text to show in the Status Bar when the form load
-	$StatusBarStartUp	= "$AuthorName - $AuthorEmail"
+	$StatusBarStartUp	= "EHC Support Tool"
 	
 	# Title of the MainForm
 	$domain				= $env:userdomain.ToUpper()
@@ -6030,7 +6030,7 @@ function Call-MainForm_pff
 	}
 	
 	$button_outputClear_Click={Clear-RichTextBox}
-	$ToolStripMenuItem_AboutInfo_Click={Call-About_pff}
+	#$ToolStripMenuItem_AboutInfo_Click={Call-About_pff}
 	
 	$button_mmcCompmgmt_Click={
 		
@@ -7524,7 +7524,7 @@ function Call-MainForm_pff
 			$ToolStripMenuItem_mmc.remove_Click($ToolStripMenuItem_mmc_Click)
 			$ToolStripMenuItem_shutdownGui.remove_Click($ToolStripMenuItem_shutdownGui_Click)
 			$ToolStripMenuItem_registeredSnappins.remove_Click($ToolStripMenuItem_registeredSnappins_Click)
-			$ToolStripMenuItem_AboutInfo.remove_Click($ToolStripMenuItem_AboutInfo_Click)
+			#$ToolStripMenuItem_AboutInfo.remove_Click($ToolStripMenuItem_AboutInfo_Click)
 			$ContextMenuStripItem_consoleToolStripMenuItem_ComputerName_Ping.remove_Click($button_ping_Click)
 			$ContextMenuStripItem_consoleToolStripMenuItem_ComputerName_RDP.remove_Click($button_remot_Click)
 			$ContextMenuStripItem_consoleToolStripMenuItem_ComputerName_compmgmt.remove_Click($button_mmcCompmgmt_Click)
@@ -11773,7 +11773,7 @@ rkJggg==')
 	#
 	# ToolStripMenuItem_about
 	#
-	[void]$ToolStripMenuItem_about.DropDownItems.Add($ToolStripMenuItem_AboutInfo)
+	#[void]$ToolStripMenuItem_about.DropDownItems.Add($ToolStripMenuItem_AboutInfo)
 	#region Binary Data
 	$ToolStripMenuItem_about.Image = [System.Convert]::FromBase64String('iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAALeSURBVDhPZVNZT1NBFL4/gWcjpkHWImXrBiqCgktACFtR21CKQLEFuriyGBQ3NMDV
